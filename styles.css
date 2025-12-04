@@ -1,0 +1,109 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.postcard {
+	background: white;
+	width: 400px;
+	height: 300px;
+}
+
+.postcard-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 10px;
+}
+
+.postcard-header h1 {
+	margin: 0;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+
+.postcard-body {
+	display: flex;
+	height: calc(100% - 120px);
+}
+
+.body-left {
+	flex: 1;
+	padding: 10px;
+	font-size: 11px;
+	line-height: 1.4;
+}
+
+.body-right {
+	flex: 1;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.body-left p {
+	margin: 0 0 10px 0;
+	font-style: italic;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
+}
+
+input,
+textarea {
+	border: none;
+	border-bottom: 1px solid grey;
+	width: 100%;
+	margin-bottom: 8px;
+	padding: 5px 0;
+	font-size: 12px;
+	outline: none;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: left;
+}
+
+input::placeholder,
+textarea::placeholder {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+textarea {
+	resize: none;
+	flex-grow: 1;
+	font-family: Arial, sans-serif;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+
+button {
+	background-color: #e0e0e0;
+	border: 1px solid #999;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.postcard-footer {
+	height: 40px;
+}
